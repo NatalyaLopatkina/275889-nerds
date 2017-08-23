@@ -1,0 +1,239 @@
+body {
+    font-family: Roboto;
+}
+.site-navigation li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.site-navigation a {
+    color: #000000
+}
+.user-navigation li {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.user-navigation a {
+    color: #000000;
+}
+.slider-item p {
+    font-size: 16px;
+    font-weight: regular;
+    color: #283136;
+    line-height: 24px;
+}
+p.about-us {
+    font-weight: normal;
+    font-size: 55px;
+    color: #000000;
+    line-height: 55px;
+}
+.services-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services-item p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#283136;
+    line-height: 24px;
+}
+.btn {
+    font-size: 16px;
+    font-weight: normal;
+    color:#ffffff;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.btn-red {
+    background-color: red;
+}
+.btn-green {
+    background-color: green;
+}
+.btn-yellow {
+    background-color:yellow;
+}
+.capability p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#283136;
+    line-height: 24px;
+}
+p.definition {
+    font-size: 45px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 45px;
+}
+.advantages-item {
+    font-size: 16px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+th {
+    font-size: 45px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 10.06px;
+}
+td {
+    font-size: 16px;
+    font-weight: regular;
+    color:#283136;
+    line-height: 18px;
+}
+.footer-contacts h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.footer-contacts p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#666666;
+    line-height: 18px;
+}
+.footer-social p {
+    font-size: 36px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 36px;
+}
+p.discount {
+    font-size: 16px;
+    font-weight: regular;
+    color:#000000;
+    line-height: 22px;
+}
+.social-button {
+    background-color: black;
+}
+h1 {
+    font-size: 55px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 55px;
+}
+.cost {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.grid {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.grid-item p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#283136;
+    line-height: 20px;
+}
+.features {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.features-item p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#283136;
+    line-height: 20px;
+}
+.grey-button {
+    font-size: 16px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.sort {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.sort-list a {
+    font-size: 14px;
+    font-weight: regular;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.item-description a {
+    font-size: 18px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.item-description p {
+    font-size: 16px;
+    font-weight: regular;
+    color:#666666;
+    line-height: 18px;
+}
+a.btn {
+    font-size: 16px;
+    font-weight: normal;
+    color:#ffffff;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.pager-first a {
+    font-size: 16px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.pager-item a {
+    font-size: 16px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.pager-next a {
+    font-size: 16px;
+    font-weight: normal;
+    color:#000000;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.modal h2 {
+    font-size: 45px;
+    font-weight: medium;
+    color:#000000;
+    line-height: 45px;
+}
+.modal-item {
+    font-size: 16px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 18px;
+}

@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Нердс</title>
+    <title>Нердс. Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-menu">
         <nav class="main-navigation">
             <a href="nerds.html">
-            <img src="http://placehold.it/150x100" alt="Логотип Нердс" width="150" height="50"></a>
+            <img src="img/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65"></a>
             <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
                 <li><a href="shop.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul>
-                <li class="user-navigation"><a href="backet.html">Корзина</a></li>
+            <ul class="user-navigation">
+                <li><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"><a href="backet.html">Корзина</a></li>
             </ul>
         </nav>
         <h1>Магазин готовых шаблонов</h1>
@@ -26,8 +27,8 @@
     <main class="container">
         <div class="">
             <p class="cost">Стоимость:</p>
-            <input type="range" min="0" max="15000" value="7500">
             <form method="post">
+                <input type="range" min="0" max="15000" value="7500">
                 <label for="price">
                     От:
                     <input type="text" name="price" value="0">
@@ -38,22 +39,28 @@
                 </label>
             </form>
             <p class="grid">Сетка:</p>
-            <p><input type="radio" name="grid" checked>Адаптивная</p>
-            <p><input type="radio" name="grid">Фиксированная</p>
-            <p><input type="radio" name="grid">Резиновая</p>
+            <div class="grid-item">
+                <p><input type="radio" name="grid" checked>Адаптивная</p>
+                <p><input type="radio" name="grid">Фиксированная</p>
+                <p><input type="radio" name="grid">Резиновая</p>
+            </div>
             <p class="features">Особенности:</p>
-            <p><input type="checkbox" name="features" checked>Слайдер</p>
-            <p><input type="checkbox" name="features">Блок преимуществ</p>
-            <p><input type="checkbox" name="features" checked>Новости</p>
-            <p><input type="checkbox" name="features">Галерея</p>
-            <p><input type="checkbox" name="features">Корзина</p>
-            <input type="submit" value="Показать">
+            <div class="features-item">
+                <p><input type="checkbox" name="features" checked>Слайдер</p>
+                <p><input type="checkbox" name="features">Блок преимуществ</p>
+                <p><input type="checkbox" name="features" checked>Новости</p>
+                <p><input type="checkbox" name="features">Галерея</p>
+                <p><input type="checkbox" name="features">Корзина</p>
+                <form>
+                    <input type="submit" value="Показать" class="grey-button">
+                </form>
+            </div>
         </div>
         <div class="sort-list">
             <p class="sort">Сортировать:</p>
-            <p class="price">По цене</p>
-            <p class="type">По типу</p>
-            <p class="name">По названию</p>
+            <a class="price" href="#">По цене</a>
+            <a class="type" href="#">По типу</a>
+            <a class="name" href="#">По названию</a>
             <form>
                 <button></button>
             </form>
@@ -62,69 +69,84 @@
             </form>
         </div>
         <section class="goods">
-            <div class="sedona">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="sedona.html">Sedona</a></p>
-                <p>Информационный сайт для туристов</p>
-                <input type="button" value="9900 руб.">
+            <div class="sedona item">
+                <img src="img/img-sedona.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="sedona.html">Sedona</a>
+                    <p>Информационный сайт для туристов</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
-            <div class="pink app">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="pink app.html">Pink App</a></p>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <input type="button" value="9900 руб.">
+            <div class="pink-app item">
+                <img src="img/img-pink.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="pink app.html">Pink App</a>
+                    <p>Продуктовый лендинг приложения для iOS и Android</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
-            <div class="barbershop">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="barbershop.html">Barbershop</a></p>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
-                <input type="button" value="9900 руб.">
+            <div class="barbershop item">
+                <img src="img/img-barbershop.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="barbershop.html">Barbershop</a>
+                    <p>Сайт салона красоты. Для мужчин, да.</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
-            <div class="mishka">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="mishka.html">Mishka</a></p>
-                <p>Интернет-магазин вязанных игрушек</p>
-                <input type="button" value="9900 руб.">
+            <div class="mishka item">
+                <img src="img/img-mishka.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="mishka.html">Mishka</a>
+                    <p>Интернет-магазин вязанных игрушек</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
-            <div class="a plus">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="a plus.html">A plus</a></p>
-                <p>Лендинг курсов повышения квалификации</p>
-                <input type="button" value="9900 руб.">
+            <div class="a-plus item">
+                <img src="img/img-aplus.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="a plus.html">A plus</a>
+                    <p>Лендинг курсов повышения квалификации</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
-            <div class="kvast">
-                <img src="http://placehold.it/150x100" width="350" height="700">
-                <p><a href="kvast.html">Кваст</a></p>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <input type="button" value="9900 руб.">
+            <div class="kvast item">
+                <img src="img/img-kvast.jpg" width="360" height="576">
+                <div class="item-description">
+                    <a href="kvast.html">Кваст</a>
+                    <p>Промо-сайт производителя крафтового кваса</p>
+                    <a class="btn btn-sm btn-red" href="#">9900</a>
+                </div>
             </div>
         </section>
         <div class="pagination">
-            <a href="#1">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#next">Следующая</a>
+            <ul class="pager">
+                <li class="pager-first"><a href="#1">1</a></li>
+                <li class="pager-item"><a href="#2">2</a></li>
+                <li class="pager-item"><a href="#3">3</a></li>
+                <li class="pager-next"><a href="#next">Следующая</a></li>
+            </ul>
         </div>
     </main>
     <footer class="main footer">
         <div class="map">
-            <img src="http://placehold.it/150x100" alt="Месторасположение" width="450" height="200">
+            <img src="img/map2.png" alt="Месторасположение" width="1440" height="416">
+            <img src="img/map-marker2.png">
             <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br> тел. +7(812)275-75-75
                 </p>
-                <a href="write.html">Напишите нам</a>
+                <a href="write.html" class="btn btn-lg btn-red">Напишите нам</a>
             </div>
         </div>
         <div class="footer-social">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <b>Давайте дружить, это выгодно!</b>
+            <p>Давайте дружить, это выгодно!</p>
             <ul>
-                <li><a class="social-button" href="#">Вконтакте</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Инстаграм</a></li>
+                <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
+                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
+                <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21"></a></li>
             </ul>
-            <p>Скидка 10% для друзей из социальных сетей</p>
+            <p class="discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
     </footer>
     <section class="modal">
@@ -142,7 +164,7 @@
                 Текст письма:
                 <textarea name="text" placeholder="В свободной форме"></textarea>
             </p>
-            <button class="button" type="submit">Отправить</button>
+            <button class="btn btn-lg btn-red" type="submit">Отправить</button>
         </form>
     </section>
 </body>
