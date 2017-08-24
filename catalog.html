@@ -29,28 +29,32 @@
             <p class="cost">Стоимость:</p>
             <form method="post">
                 <input type="range" min="0" max="15000" value="7500">
-                <label for="price">
+                <label for="price-min">
                     От:
-                    <input type="text" name="price" value="0">
+                    <input id="price-min" type="text" name="price" value="0">
                 </label>
-                <label for="price">
+                <label for="price-max">
                     До:
-                    <input type="text" name="price2" value="15000">
+                    <input id="price-max" type="text" name="price2" value="15000">
                 </label>
             </form>
             <p class="grid">Сетка:</p>
             <div class="grid-item">
-                <p><input type="radio" name="grid" checked>Адаптивная</p>
-                <p><input type="radio" name="grid">Фиксированная</p>
-                <p><input type="radio" name="grid">Резиновая</p>
+                <form action="" method="post">
+                    <label><input type="radio" name="grid" checked>Адаптивная</label>
+                    <label><input type="radio" name="grid">Фиксированная</label>
+                    <label><input type="radio" name="grid">Резиновая</label>
+                </form>
             </div>
             <p class="features">Особенности:</p>
             <div class="features-item">
-                <p><input type="checkbox" name="features" checked>Слайдер</p>
-                <p><input type="checkbox" name="features">Блок преимуществ</p>
-                <p><input type="checkbox" name="features" checked>Новости</p>
-                <p><input type="checkbox" name="features">Галерея</p>
-                <p><input type="checkbox" name="features">Корзина</p>
+                <form action="" method="post">
+                    <p><label><input type="checkbox" name="features" checked>Слайдер</label></p>
+                    <p><label><input type="checkbox" name="features">Блок преимуществ</label></p>
+                    <p><label><input type="checkbox" name="features" checked>Новости</label></p>
+                    <p><label><input type="checkbox" name="features">Галерея</label></p>
+                    <p><label><input type="checkbox" name="features">Корзина</label></p>
+                </form>
                 <form>
                     <input type="submit" value="Показать" class="grey-button">
                 </form>
@@ -153,16 +157,16 @@
         <h2>Напишите нам</h2>
         <form class="modal-form" action="" method="post">
             <p class="modal-item">
-                Ваше имя:
-                <input type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+                <label for="modal-name">Ваше имя:</label>
+                <input id="modal-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
             </p>
             <p class="modal-item">
-                Ваш e-mail:
-                <input type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+                <label for="modal-e-mail">Ваш e-mail:</label>
+                <input id="modal-e-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
             </p>
             <p class="modal-item">
-                Текст письма:
-                <textarea name="text" placeholder="В свободной форме"></textarea>
+                <label for="modal-text">Текст письма:</label>
+                <textarea id="modal-text" name="text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="btn btn-lg btn-red" type="submit">Отправить</button>
         </form>
