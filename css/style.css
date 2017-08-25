@@ -1,5 +1,5 @@
 body {
-    font-family: Roboto;
+    font-family: "Roboto","Arial","Arial Black", sans-serif;
 }
 .site-navigation li {
     font-weight: normal;
@@ -21,7 +21,7 @@ body {
 }
 .slider-item p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color: #283136;
     line-height: 24px;
 }
@@ -40,7 +40,7 @@ p.about-us {
 }
 .services-item p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#283136;
     line-height: 24px;
 }
@@ -62,22 +62,28 @@ p.about-us {
 }
 .capability p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#283136;
     line-height: 24px;
+}
+.capability li {
+    font-size: 16px;
+    font-weight: normal;
+    color:#283136;
+    line-height: 24px;
+}
+p.advantages-item {
+    font-size: 16px;
+    font-weight: bold;
+    color:#000000;
+    line-height: 24px;
+    text-transform: uppercase;
 }
 p.definition {
     font-size: 45px;
     font-weight: normal;
     color:#000000;
     line-height: 45px;
-}
-.advantages-item {
-    font-size: 16px;
-    font-weight: bold;
-    color:#000000;
-    line-height: 24px;
-    text-transform: uppercase;
 }
 th {
     font-size: 45px;
@@ -87,7 +93,7 @@ th {
 }
 td {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#283136;
     line-height: 18px;
 }
@@ -100,7 +106,7 @@ td {
 }
 .footer-contacts p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#666666;
     line-height: 18px;
 }
@@ -112,7 +118,7 @@ td {
 }
 p.discount {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#000000;
     line-height: 22px;
 }
@@ -141,7 +147,7 @@ h1 {
 }
 .grid-item p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#283136;
     line-height: 20px;
 }
@@ -154,7 +160,7 @@ h1 {
 }
 .features-item p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#283136;
     line-height: 20px;
 }
@@ -174,7 +180,7 @@ h1 {
 }
 .sort-list a {
     font-size: 14px;
-    font-weight: regular;
+    font-weight: normal;
     color:#000000;
     line-height: 18px;
     text-transform: uppercase;
@@ -188,7 +194,7 @@ h1 {
 }
 .item-description p {
     font-size: 16px;
-    font-weight: regular;
+    font-weight: normal;
     color:#666666;
     line-height: 18px;
 }
@@ -220,11 +226,6 @@ a.btn {
     line-height: 18px;
     text-transform: uppercase;
 }
-
-
-
-
-
 .modal h2 {
     font-size: 45px;
     font-weight: medium;
@@ -236,4 +237,20 @@ a.btn {
     font-weight: bold;
     color:#000000;
     line-height: 18px;
+}
+.map-background {
+    position: relative;
+    z-index: 1;
+}
+.marker-main {
+    position: absolute;
+    z-index: 2;
+    left:830px;
+    top: 4260px;
+}
+.marker-catalog {
+    position: absolute;
+    z-index: 2;
+    left:830px;
+    bottom: -4608px;
 }

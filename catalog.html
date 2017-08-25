@@ -37,34 +37,32 @@
                     До:
                     <input id="price-max" type="text" name="price2" value="15000">
                 </label>
-            </form>
-            <p class="grid">Сетка:</p>
-            <div class="grid-item">
-                <form action="" method="post">
+                <p class="grid">Сетка:</p>
+                <div class="grid-item">
                     <label><input type="radio" name="grid" checked>Адаптивная</label>
                     <label><input type="radio" name="grid">Фиксированная</label>
                     <label><input type="radio" name="grid">Резиновая</label>
-                </form>
-            </div>
-            <p class="features">Особенности:</p>
-            <div class="features-item">
-                <form action="" method="post">
-                    <p><label><input type="checkbox" name="features" checked>Слайдер</label></p>
-                    <p><label><input type="checkbox" name="features">Блок преимуществ</label></p>
-                    <p><label><input type="checkbox" name="features" checked>Новости</label></p>
-                    <p><label><input type="checkbox" name="features">Галерея</label></p>
-                    <p><label><input type="checkbox" name="features">Корзина</label></p>
-                </form>
-                <form>
-                    <input type="submit" value="Показать" class="grey-button">
-                </form>
-            </div>
+                </div>
+                <p class="features">Особенности:</p>
+                <div class="features-item">
+                    <ul>
+                        <li><label><input type="checkbox" name="features" checked>Слайдер</label></li>
+                        <li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
+                        <li><label><input type="checkbox" name="features" checked>Новости</label></li>
+                        <li><label><input type="checkbox" name="features">Галерея</label></li>
+                        <li><label><input type="checkbox" name="features">Корзина</label></li>
+                        <input type="submit" value="Показать" class="grey-button">
+                    </ul>
+                </div>
+            </form>
         </div>
         <div class="sort-list">
             <p class="sort">Сортировать:</p>
-            <a class="price" href="#">По цене</a>
-            <a class="type" href="#">По типу</a>
-            <a class="name" href="#">По названию</a>
+            <ul>
+                <li><a class="price" href="#">По цене</a></li>
+                <li><a class="type" href="#">По типу</a></li>
+                <li><a class="name" href="#">По названию</a></li>
+            </ul>
             <form>
                 <button></button>
             </form>
@@ -133,8 +131,8 @@
     </main>
     <footer class="main footer">
         <div class="map">
-            <img src="img/map2.png" alt="Месторасположение" width="1440" height="416">
-            <img src="img/map-marker2.png">
+            <img src="img/map2.png" alt="Месторасположение" width="1440" height="416" class="map-background">
+            <img src="img/map-marker2.png" alt="Маркер" width="231" height="190" class="marker-catalog">
             <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br> тел. +7(812)275-75-75
