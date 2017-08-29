@@ -1,252 +1,315 @@
 body {
     font-family: "Roboto","Arial","Arial Black", sans-serif;
-}
-.site-navigation li {
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
 }
-.site-navigation a {
-    color: #000000
+a {
+    text-decoration: none;
 }
-.user-navigation li {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    text-transform: uppercase;
-}
+.site-navigation a,
 .user-navigation a {
     color: #000000;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color:#fb565a;
+}
+.site-navigation a:active,
+.user-navigation a:active {
+    color:#cacaca;
 }
 .slider-item p {
-    font-size: 16px;
-    font-weight: normal;
     color: #283136;
     line-height: 24px;
 }
 p.about-us {
-    font-weight: normal;
     font-size: 55px;
-    color: #000000;
     line-height: 55px;
+    color: #000000;
 }
 .services-item h3 {
     font-size: 24px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
 }
 .services-item p {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 24px;
 }
-.btn {
-    font-size: 16px;
-    font-weight: normal;
+a.btn {
     color:#ffffff;
     line-height: 18px;
     text-transform: uppercase;
 }
 .btn-red {
-    background-color: red;
+    background-color: #fb565a;
+}
+.btn-red:hover {
+    background-color:#e74246;
+}
+.btn-red:active {
+    background-color: #d7373b;
+    color:#e48789;
 }
 .btn-green {
-    background-color: green;
+    background-color:#00ca74;
+}
+.btn-green:hover {
+    background-color: #00bc6c;
+}
+.btn-green:active {
+    background-color: #00aa62;
+    color:#74c69c;
 }
 .btn-yellow {
-    background-color:yellow;
+    background-color:#efc84a;
+}
+.btn-yellow:hover {
+    background-color: #eab534;
+}
+.btn-yellow:active {
+    background-color: #e5a722;
+    color:#edc47f;
 }
 .capability p {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 24px;
 }
 .capability li {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 24px;
 }
 p.advantages-item {
-    font-size: 16px;
     font-weight: bold;
-    color:#000000;
     line-height: 24px;
     text-transform: uppercase;
+    color: #000000;
 }
 p.definition {
     font-size: 45px;
-    font-weight: normal;
-    color:#000000;
     line-height: 45px;
+    color: #000000;
 }
 th {
     font-size: 45px;
     font-weight: bold;
-    color:#000000;
     line-height: 10.06px;
 }
 td {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 18px;
+}
+.projects a {
+    opacity: 0.3;
+}
+.projects a:hover {
+    opacity: 1;
+}
+.projects a:active {
+    opacity: 0.1;
 }
 .footer-contacts h4 {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
 }
 .footer-contacts p {
-    font-size: 16px;
-    font-weight: normal;
     color:#666666;
     line-height: 18px;
 }
 .footer-social p {
     font-size: 36px;
     font-weight: bold;
-    color:#000000;
     line-height: 36px;
+}
+.social-button {
+    background-color:#e1e1e1;
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.footer-social .vk {
+    background-image: url(img/vk-icon.svg) center center;
+}
+.social-button:hover {
+    background-color: #e74246;
+}
+.social-button:active{
+    background-color: #d7373b;
 }
 p.discount {
     font-size: 16px;
     font-weight: normal;
-    color:#000000;
     line-height: 22px;
 }
-.social-button {
-    background-color: black;
+a.logo:hover {
+    opacity: 0.75;
 }
-h1 {
+a.logo:active {
+    opacity: 0.3;
+}
+.main-menu h1.shop {
     font-size: 55px;
-    font-weight: normal;
-    color:#000000;
     line-height: 55px;
 }
 .cost {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
 }
 .grid {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
 }
 .grid-item p {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 20px;
+}
+.grid-item input[type="radio"] {
+    color: #283136;
+}
+.grid-item input:hover {
+    color: #000000;
 }
 .features {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
 }
 .features-item p {
-    font-size: 16px;
-    font-weight: normal;
     color:#283136;
     line-height: 20px;
 }
+
+
+
+
+.features-item input[type="submit"] {
+    background-color:#eeeeee;
+}
+.features-item input:hover {
+    background-color:#dfdfdf;
+}
+.features-item input:active {
+    background-color:#d5d5d5;
+    color:#a9a9a9;
+}
+
+
+
+
+
+
 .grey-button {
-    font-size: 16px;
-    font-weight: normal;
-    color:#000000;
     line-height: 18px;
     text-transform: uppercase;
+    color: #000000;
+}
+.grey-button a:hover {
+    background-color: #dfdfdf;
+}
+.grey-button a:active {
+    background-color: #d5d5d5;
+    color:#b2b2b2;
 }
 .sort {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 18px;
     text-transform: uppercase;
 }
-.sort-list a {
+.sort-item a {
     font-size: 14px;
-    font-weight: normal;
-    color:#000000;
     line-height: 18px;
     text-transform: uppercase;
+    color: #cacaca;
+}
+.sort-item a:hover {
+    color: #8d8d8d;
+}
+.sort-item a:active {
+    color: #000000;
 }
 .item-description a {
     font-size: 18px;
     font-weight: bold;
-    color:#000000;
     line-height: 30px;
     text-transform: uppercase;
+    color: #000000;
 }
 .item-description p {
-    font-size: 16px;
-    font-weight: normal;
     color:#666666;
     line-height: 18px;
 }
 a.btn {
-    font-size: 16px;
-    font-weight: normal;
     color:#ffffff;
     line-height: 18px;
     text-transform: uppercase;
 }
-.pager-first a {
-    font-size: 16px;
-    font-weight: normal;
-    color:#000000;
+.btn-pager a {
     line-height: 18px;
-    text-transform: uppercase;
-}
-.pager-item a {
-    font-size: 16px;
     font-weight: normal;
-    color:#000000;
-    line-height: 18px;
-    text-transform: uppercase;
+    color: #000000;
 }
-.pager-next a {
-    font-size: 16px;
-    font-weight: normal;
-    color:#000000;
-    line-height: 18px;
-    text-transform: uppercase;
+.btn-pager a:hover {
+    background-color:#dfdfdf;
 }
+.btn-pager a:active {
+    background-color:#d5d5d5;
+    color:#a9a9a9;
+}
+.btn-next a {
+    color: #000000;
+} 
 .modal h2 {
     font-size: 45px;
-    font-weight: medium;
-    color:#000000;
     line-height: 45px;
 }
-.modal-item {
-    font-size: 16px;
+.modal p {
     font-weight: bold;
-    color:#000000;
     line-height: 18px;
 }
-.map-background {
+.write-form input[type="text"],
+.write-form input[type="email"],
+.write-form textarea {
+    border: 2px solid #d7dcde;
+    color: #d7dcde;
+}
+.write-form input:hover,
+.write-form textarea:hover {
+    border-color: #b4b9bb;
+    color:#b4b9bb;
+}
+.write-form input:focus,
+.write-form textarea:focus {
+    border-color:#000000;
+    color:#000000;
+}
+.write-form input:invalid,
+.write-form textarea:invalid {
+    border-color:#e74246;
+    color:#e74246;
+}
+.map .map-background {
     position: relative;
     z-index: 1;
 }
-.marker-main {
+.map .marker-main {
     position: absolute;
     z-index: 2;
     left:830px;
-    top: 4260px;
+    top: 4240px;
 }
 .marker-catalog {
     position: absolute;

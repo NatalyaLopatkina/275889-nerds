@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Нердс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -14,7 +15,7 @@
             <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
@@ -102,23 +103,25 @@
             </div>
         </div>
         <div class="projects">
-            <ul>
-                <li class=""><a href="htmlacademy.html">
+            <ul class="projects-list">
+                <li class="projects-item"><a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-1.png" alt="htmlacademy" width="199" height="68"></a></li>
-                <li class=""><a href="barbershop.html">
+                <li class="projects-item"><a href="barbershop.html">
                 <img src="img/logo-2.png" alt="Барбершоп Бородинский" width="209" height="90"></a></li>
-                <li class=""><a href="pink.html">
+                <li class="projects-item"><a href="pink.html">
                 <img src="img/logo-3.png" alt="Pink" width="185" height="52"></a></li>
-                <li class=""><a href="mishka.html">
+                <li class="projects-item"><a href="mishka.html">
                 <img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a></li>
             </ul>
 
         </div>
     </main>
-    <footer class="main footer">
-        <div class="map">
-            <img src="img/map.png" alt="Месторасположение" width="1440" height="416" class="map-background">
-            <img src="img/map-marker.png" alt="Маркер" width="231" height="190" class="marker-main">
+    <footer class="main-footer">
+        <div class="contacts">
+            <div class="map">
+                <img src="img/map.png" alt="Карта" width="1440" height="416" class="map-background">
+                <img src="img/map-marker.png" alt="Маркер" width="231" height="190" class="marker-main">
+            </div>
             <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br> тел. +7(812)275-75-75
@@ -131,9 +134,9 @@
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <p>Давайте дружить, это выгодно!</p>
             <ul>
-                <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
-                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
-                <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21"></a></li>
+                <li><a class="social-button vk" href="#"></a></li>
+                <li><a class="social-button fb" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="26" height="15"></a></li>
+                <li><a class="social-button insta" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="26" height="15"></a></li>
             </ul>
             <p class="discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
@@ -141,18 +144,18 @@
 
     <section class="modal">
         <h2>Напишите нам</h2>
-        <form class="modal-form" action="" method="post">
-            <p class="modal-item">
-                <label for="modal-name">Ваше имя:</label>
-                <input id="modal-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
+        <form class="write-form" action="" method="post">
+            <p>
+                <label for="user-name">Ваше имя:</label>
+                <input class="form-name" id="user-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
             </p>
-            <p class="modal-item">
-                <label for="modal-e-mail">Ваш e-mail:</label>
-                <input id="modal-e-mail" type="text" name="e-mail" value="" placeholder="Для отправки ответа">
+            <p>
+                <label for="user-e-mail">Ваш e-mail:</label>
+                <input class="form-e-mail" id="user-e-mail" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
             </p>
-            <p class="modal-item">
-                <label for="modal-text">Текст письма:</label>
-                <textarea id="modal-text" name="text" placeholder="В свободной форме"></textarea>
+            <p>
+                <label for="user-text">Текст письма:</label>
+                <textarea class="form-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="btn btn-lg btn-red" type="submit">Отправить</button>
         </form>
