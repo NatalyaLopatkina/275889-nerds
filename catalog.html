@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Нердс. Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -15,7 +16,7 @@
             <ul class="site-navigation">
                 <li><a href="studio.html">Студия</a></li>
                 <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="shop.html">Магазин</a></li>
+                <li class="navigation-shop"><a href="shop.html">Магазин</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
@@ -27,32 +28,48 @@
     <main class="container">
         <div class="">
             <p class="cost">Стоимость:</p>
-            <form method="post">
-                <input type="range" min="0" max="15000" value="7500">
-                <label for="price-min">
-                    От:
-                    <input id="price-min" type="text" name="price" value="0">
-                </label>
-                <label for="price-max">
-                    До:
-                    <input id="price-max" type="text" name="price2" value="15000">
-                </label>
+            <form method="get">
+                <div class="range-filter">
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                        <label for="price1">
+                        ОТ <input id="price1" class="min-price" type="text" value="0">
+                        </label>
+                        <label for="price2">
+                            ДО <input id="price2" class="max-price" type="text" value="15000">
+                        </label>
+                    </div>
+                </div>
                 <p class="grid">Сетка:</p>
                 <div class="grid-item">
                     <ul>
-                        <li><label><input type="radio" name="grid" checked>Адаптивная</label></li>
-                        <li><label><input type="radio" name="grid">Фиксированная</label></li>
-                        <li><label><input type="radio" name="grid">Резиновая</label></li>
+                        <li><input id="adaptive" type="radio" name="grid" class="radio" checked>
+                            <label for="adaptive">Адаптивная</label></li>
+                        <li><input id="fix" type="radio" name="grid" class="radio">
+                            <label for="fix">Фиксированная</label></li>
+                        <li><input id="rubber" type="radio" name="grid" class="radio">
+                            <label for="rubber">Резиновая</label></li>
                     </ul>
                 </div>
                 <p class="features">Особенности:</p>
                 <div class="features-item">
                     <ul>
-                        <li><label><input type="checkbox" name="features" checked>Слайдер</label></li>
-                        <li><label><input type="checkbox" name="features">Блок преимуществ</label></li>
-                        <li><label><input type="checkbox" name="features" checked>Новости</label></li>
-                        <li><label><input type="checkbox" name="features">Галерея</label></li>
-                        <li><label><input type="checkbox" name="features">Корзина</label></li>
+                        <li><input id="slider" type="checkbox" name="features" checked class="checkbox">
+                            <label for="slider">Слайдер</label></li>
+                        <li><input id="advantages" type="checkbox" name="features" class="checkbox">
+                            <label for="advantages">Блок преимуществ</label></li>
+                        <li><input id="news" type="checkbox" name="features" checked class="checkbox">
+                            <label for="news">Новости</label></li>
+                        <li><input id="gallery" type="checkbox" name="features" class="checkbox">
+                            <label for="gallery">Галерея</label></li>
+                        <li><input id="backet" type="checkbox" name="features" class="checkbox">
+                            <label for="backet">Корзина</label></li>
                     </ul>
                     <input type="submit" value="Показать" class="grey-button">
                 </div>
@@ -65,12 +82,19 @@
                 <li><a class="type" href="#">По типу</a></li>
                 <li><a class="name" href="#">По названию</a></li>
             </ul>
-            <a href="#"></a>
-            <a href="#"></a>
+            <div class="arrow">
+                <a class="arrow-down" href="#">
+                    <img src="img/icon-down-dir.svg" alt="Стрелка вниз" width="11" height="10">
+                </a>
+                <a class="arrow-up" href="#">
+                    <img src="img/icon-up-dir.svg" alt="Стрелка вверх" width="11" height="10">
+                </a>
+            </div>
         </div>
         <section class="goods">
             <div class="sedona item">
-                <img src="img/img-sedona.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-sedona.jpg" alt="Sedona" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="sedona.html">Sedona</a>
                     <p>Информационный сайт для туристов</p>
@@ -78,7 +102,8 @@
                 </div>
             </div>
             <div class="pink-app item">
-                <img src="img/img-pink.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="pink app.html">Pink App</a>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -86,7 +111,8 @@
                 </div>
             </div>
             <div class="barbershop item">
-                <img src="img/img-barbershop.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-barbershop.jpg" alt="Barbershop" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="barbershop.html">Barbershop</a>
                     <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -94,7 +120,8 @@
                 </div>
             </div>
             <div class="mishka item">
-                <img src="img/img-mishka.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-mishka.jpg" alt="Mishka" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="mishka.html">Mishka</a>
                     <p>Интернет-магазин вязанных игрушек</p>
@@ -102,7 +129,8 @@
                 </div>
             </div>
             <div class="a-plus item">
-                <img src="img/img-aplus.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="a plus.html">A plus</a>
                     <p>Лендинг курсов повышения квалификации</p>
@@ -110,7 +138,8 @@
                 </div>
             </div>
             <div class="kvast item">
-                <img src="img/img-kvast.jpg" width="360" height="576">
+                <img src="img/browser.svg" alt="Браузер" class="browser">
+                <img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576" class="goods-item">
                 <div class="item-description">
                     <a href="kvast.html">Кваст</a>
                     <p>Промо-сайт производителя крафтового кваса</p>
@@ -120,17 +149,19 @@
         </section>
         <div class="pagination">
             <ul class="pager">
-                <li class="btn-pager"><a href="#1">1</a></li>
+                <li class="pager-first"><a href="#1">1</a></li>
                 <li class="btn-pager"><a href="#2">2</a></li>
                 <li class="btn-pager"><a href="#3">3</a></li>
                 <li class="grey-button btn-next"><a href="#next">Следующая</a></li>
             </ul>
         </div>
     </main>
-    <footer class="main footer">
-        <div class="map">
-            <img src="img/map2.png" alt="Месторасположение" width="1440" height="416" class="map-background">
-            <img src="img/map-marker2.png" alt="Маркер" width="231" height="190" class="marker-catalog">
+    <footer class="main-footer">
+        <div class="contacts">
+            <div class="map">
+                <img src="img/map.png" alt="Карта" width="1440" height="416">
+                <img src="img/map-marker.png" alt="Маркер" width="231" height="190" class="marker">
+            </div>
             <div class="footer-contacts">
                 <h4>Nёrds design studio</h4>
                 <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br> тел. +7(812)275-75-75
@@ -142,9 +173,9 @@
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <p>Давайте дружить, это выгодно!</p>
             <ul>
-                <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a></li>
-                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22"></a></li>
-                <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21"></a></li>
+                <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15" class="vk"></a></li>
+                <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22" class="fb"></a></li>
+                <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
             </ul>
             <p class="discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
