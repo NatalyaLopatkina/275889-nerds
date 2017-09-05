@@ -8,10 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="main-container">
+<body>
     <header class="main-menu">
         <nav class="main-navigation">
-            <img src="img/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65" class="main-menu-logo">
+            <div class="main-navigation-logo">
+            <img src="img/nerds-logo.svg" alt="Логотип Нердс" width="160" height="65"></div>
             <div class="main-navigation-wrapper">
                 <div class="item-navigation">
                     <ul class="site-navigation">
@@ -34,8 +35,8 @@
             <input type="radio" name="point" id="slide2">
             <input type="radio" name="point" id="slide3">
             <div class="slider">
+                <h1 class="visually-hidden">Веб-студия Нердс</h1>
                 <div class="slides slide1">
-                    <h1 class="visually-hidden">Веб-студия Нердс</h1>
                     <img src="img/slide1.png" width="698" height="413">
                     <div class="slide-information">
                         <p class="about-us">Долго, дорого, скрупулезно.</p>
@@ -95,7 +96,7 @@
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
                     рук, как роботы.</p>
                 <p class="advantages-item">Выполняем заказы на разработку:</p>
-                <ul>
+                <ul class="advantages-list">
                     <li>-Веб-сайтов любой сложности</li>
                     <li>-Мобильных приложений для iOS и Android</li>
                     <li>-Слайдшоу и видео для корпоративных презентаций</li>
@@ -119,15 +120,15 @@
                 </table>
             </div>
         </div>
-        <div class="projects">
-            <ul class="projects-list">
-                <li class="projects-item"><a href="https://htmlacademy.ru/intensive/htmlcss">
+        <div class="partners">
+            <ul class="partners-list">
+                <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-1.png" alt="htmlacademy" width="199" height="68"></a></li>
-                <li class="projects-item"><a href="barbershop.html">
+                <li class="partners-item"><a href="barbershop.html">
                 <img src="img/logo-2.png" alt="Барбершоп Бородинский" width="209" height="90"></a></li>
-                <li class="projects-item"><a href="pink.html">
+                <li class="partners-item"><a href="pink.html">
                 <img src="img/logo-3.png" alt="Pink" width="185" height="52"></a></li>
-                <li class="projects-item"><a href="mishka.html">
+                <li class="partners-item"><a href="mishka.html">
                 <img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a></li>
             </ul>
         </div>
@@ -135,8 +136,8 @@
     </main>
     <footer class="main-footer">
         <div class="contacts">
-            <div class="map">
-                <img src="img/map.png" alt="Карта" width="1440" height="416">
+            <div class="map-container">
+                <img src="img/map.png" alt="Карта" class="map">
                 <img src="img/map-marker.png" alt="Маркер" width="231" height="190" class="marker">
             </div>
             <div class="footer-contacts">
@@ -156,11 +157,13 @@
                 <li class="social-button"><a href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
             </ul>
             </div>
+        <div class="footer-text">
             <p>Давайте дружить, это выгодно!</p>
             <p class="discount">Скидка 10% для друзей из социальных сетей</p>
         </div>
+        </div>
     </footer>
-
+<!--
     <section class="modal">
         <h2>Напишите нам</h2>
         <form class="write-form" action="" method="post">
@@ -178,7 +181,7 @@
             </p>
             <button class="btn btn-lg btn-red" type="submit">Отправить</button>
         </form>
-    </section>
+    </section>-->
 </body>
 
 </html>
