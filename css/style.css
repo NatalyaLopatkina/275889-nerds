@@ -132,7 +132,7 @@ p.title-slide {
 }
 
 .slider-content {
-	height: 412px;
+	min-height: 412px;
 	overflow: hidden;
 	position: relative;
 	width: inherit;
@@ -302,6 +302,8 @@ p.title-slide {
 	justify-content: space-between;
 	
     margin-bottom: 78px;
+    border-top: 2px solid #eeeeee;
+    padding-top: 40px;
 }
 
 .capability {
@@ -328,10 +330,9 @@ p.advantages-item {
     margin-bottom: 24px;
 }
 
-.advantages-list {
-    list-style: none;
+.advantages-list li {
+    list-style: none; 
 }
-
 p.definition {
     font-size: 45px;
     line-height: 45px;
@@ -504,20 +505,32 @@ td {
 
 .social-button .vk {
     position: absolute;
-    top: 31px;
-    left: 24px;
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 15px;
+    margin-top: -6.5px;
+    margin-left: -13px;
 }
 
 .social-button .fb {
     position: absolute;
-    top: 29px;
-    left: 30px;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 22px;
+    margin-top: -11px;
+    margin-left: -6px;
 }
 
 .social-button .inst {
     position: absolute;
-    top: 28px;
-    left: 27px;
+    top: 50%;
+    left: 50%;
+    width: 21px;
+    height: 21px;
+    margin-top: -10.5px;
+    margin-left: -10.5px;
 }
 
 .social-button:hover {
@@ -527,6 +540,12 @@ td {
 .social-button:active{
     background-color: #d7373b;
 }
+.social-button .vk:active,
+.social-button .fb:active,
+.social-button .inst.active {
+    opacity: 0.3;
+}
+
 
 .footer-text p {
     font-size: 36px;
@@ -550,7 +569,7 @@ p.discount {
     padding-left: 140px;
 }
 a.logo:hover {
-    opacity: 0.75;
+    opacity: 0.8;
 }
 a.logo:active {
     opacity: 0.3;
@@ -656,6 +675,8 @@ h1.shop {
 .grid-list {
     list-style: none;
     padding: 0;
+    margin: 0;
+    position: relative;
 }
 .grid-item {
     color:#283136;
@@ -724,12 +745,12 @@ input[type="checkbox"] {
     border: none;
     margin-top: 48px;
 }
-.grey-button a:hover {
+.grey-button:hover {
     background-color: #dfdfdf;
 }
-.grey-button a:active {
+.grey-button:active {
     background-color: #d5d5d5;
-    color:#b2b2b2;
+    opacity: 0.3;
 }
 .sort-catalog {
     width: 760px;
@@ -818,7 +839,7 @@ input[type="checkbox"] {
 }
 .item-description {
   width: 260px;
-  height: 230px;
+  min-height: 230px;
   position: absolute;
   bottom: 0px;
   background-color: #d5d5d5;
@@ -872,7 +893,7 @@ a.btn {
 }
 .btn-pager a:active {
     background-color:#d5d5d5;
-    color:#a9a9a9;
+    opacity: 0.3;
 }
 .btn-next {
     display: inline-block;
@@ -888,29 +909,105 @@ a.btn {
     margin-left: 75px;;
     margin-top: 60px;
 } 
-.modal h2 {
+.btn-next:hover {
+    background: #dfdfdf;
+}
+.btn-next:active {
+    background: #d5d5d5;
+    opacity: 0.3;
+}
+.modal-write {
+    width: 760px;
+    background-color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 62px;
+    padding-bottom: 85px;
+    position: fixed;
+    bottom: 190px;
+    left: 50%;
+    margin-left: -473px;
+    z-index: 200;
+    box-shadow: 0 0 100px 5px #ebebeb;
+    display: none;
+   
+}
+.modal-show {
+    display: block;
+}
+.write-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.modal-close {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+
+    background-image: url(../img/close-cross.svg);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    top: 77px;
+    right: 90px;
+    opacity: 0.3;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-close:active {
+    opacity: 0.1;
+}
+.modal-write h2 {
     font-size: 45px;
     line-height: 45px;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 41px;
 }
-.modal p {
+.modal-write p {
     font-weight: 700;
     line-height: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.write-form label {
+    margin-bottom: 10px;
 }
 .write-form input[type="text"],
 .write-form input[type="email"] {
     border: 2px solid #d7dcde;
-    color: #d7dcde;
+    color: #444444;
+    font-size: 16px;
+    line-height: 18px;
     width: 360px;
     height: 50px;
     border-radius: 3px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    padding-right: 133px;
+    margin-top: 10px;
+    margin-bottom: 33px;
 }
 .write-form textarea {
     border: 2px solid #d7dcde;
-    color: #d7dcde;
+    color: #444444;
+    font-size: 16px;
+    line-height: 18px;
     width: 760px;
-    height: 117px;
+    height: 114px;
     border-radius: 3px;
+    box-sizing: border-box;
+    padding-top: 14px;
+    padding-left: 14px;
+    padding-right: 133px;
+    margin-top: 10px;
+    margin-bottom: 47px;
 }
 .write-form input:hover,
 .write-form textarea:hover {
@@ -919,6 +1016,7 @@ a.btn {
 }
 .write-form input:focus,
 .write-form textarea:focus {
+    outline: none;
     border-color:#000000;
     color:#000000;
 }

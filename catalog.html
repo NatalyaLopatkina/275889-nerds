@@ -22,7 +22,7 @@
                     <li><a href="contacts.html">Контакты</a></li>
                 </ul>
                 <ul class="user-navigation">
-                    <li><img src="img/cart-icon.svg" alt="Корзина" width="15" height="15"><a href="backet.html">Корзина</a></li>
+                    <li><a class="backet-link" href="backet.html">Корзина</a></li>
                 </ul>
             </div>
         </nav>
@@ -113,7 +113,8 @@
                             <img src="img/img-pink.jpg" alt="Pink App" width="360" height="576" class="product-card">
                             <div class="item-description">
                                 <a href="pink app.html">Pink App</a>
-                                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                                <p>Продуктовый лендинг приложения для iOS и Android
+                                </p>
                                 <a class="btn btn-sm btn-red" href="#">9900</a>
                             </div>
                         </li>
@@ -181,7 +182,7 @@
                 <a href="write.html" class="btn btn-lg btn-red">Напишите нам</a>
             </div>
         </div>
-        <div class="footer-social">
+        <div class="footer-social content-wrapper">
             <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <div class="social-button-list">
                 <ul class="social-button-item">
@@ -196,25 +197,42 @@
             </div>
         </div>
     </footer>
-    <!--
-    <section class="modal">
+
+    <section class="modal-write">
         <h2>Напишите нам</h2>
         <form class="write-form" action="" method="post">
             <p>
-                <label for="user-name">Ваше имя:</label>
+                <label for="user-name">Ваше имя:</label><br>
                 <input class="form-name" id="user-name" type="text" name="name" value="" placeholder="Представьтесь, пожалуйста">
             </p>
             <p>
-                <label for="user-e-mail">Ваш e-mail:</label>
+                <label for="user-e-mail">Ваш e-mail:</label><br>
                 <input class="form-e-mail" id="user-e-mail" type="email" name="e-mail" value="" placeholder="Для отправки ответа">
             </p>
             <p>
-                <label for="user-text">Текст письма:</label>
+                <label for="user-text">Текст письма:</label><br>
                 <textarea class="form-text" id="user-text" name="text" placeholder="В свободной форме"></textarea>
             </p>
             <button class="btn btn-lg btn-red" type="submit">Отправить</button>
         </form>
-    </section>-->
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <script>
+        var openLink=document.querySelector(".footer-contacts a");
+        var popup=document.querySelector(".modal-write");
+        
+        openLink.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.add("modal-show");
+        });
+
+        var closeLink=document.querySelector(".modal-close");
+        
+        closeLink.addEventListener("click", function(evt) {
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+        });
+        </script>
 </body>
 
 </html>
