@@ -218,7 +218,6 @@ p.title-slide {
 
 .services {
 
-    margin-bottom: 120px;
     margin-top: 80px;
 }
 
@@ -296,14 +295,18 @@ p.title-slide {
     background-color: #e5a722;
     color:#edc47f;
 }
-
+.line {
+    width: 1160px;
+    border-top: 2px solid #eeeeee;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
 .advantages {
 	display: flex;
 	justify-content: space-between;
 	
-    margin-bottom: 78px;
-    border-top: 2px solid #eeeeee;
-    padding-top: 40px;
+    margin-bottom: 42px;
 }
 
 .capability {
@@ -329,9 +332,27 @@ p.advantages-item {
     margin-top: 40px;
     margin-bottom: 24px;
 }
+.advantages-list {
+    margin: 14px 0;
+    padding: 0;
 
+    list-style: none;
+}
 .advantages-list li {
-    list-style: none; 
+    position: relative;
+    padding-left: 36px;
+    margin-bottom: 30px;
+}
+.advantages-list li:before {
+    content: "";
+    width: 25px;
+    height: 2px;
+
+    background-color: #fb565a;
+    position: absolute;
+    top: 10px;
+    left: 0;
+
 }
 p.definition {
     font-size: 45px;
@@ -360,11 +381,20 @@ td {
     color:#283136;
     line-height: 18px;
 }
-
+.line-top {
+    width: 1160px;
+    border-top: 2px solid #eeeeee;
+    margin: 0 auto;
+}
+.line-bottom {
+    width: 1160px;
+    border-top: 2px solid #eeeeee;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
 .partners {
     display: flex;
-    border-bottom: 2px solid #eeeeee;
-    border-top: 2px solid #eeeeee;
+    width: 1160px;
     height: 184px;
 }
 
@@ -677,10 +707,14 @@ h1.shop {
     padding: 0;
     margin: 0;
     position: relative;
+    margin: 14px 0;
 }
 .grid-item {
+    position: relative;
+    margin-bottom: 15px;
     color:#283136;
     line-height: 20px;
+
 }
 input[type="radio"],
 input[type="checkbox"] {
@@ -691,16 +725,23 @@ input[type="checkbox"] {
     content: "";
     display: inline-block;
     background-image: url(../img/radio-off.svg);
+    background-position: left bottom;
     opacity: 0.3;
     background-repeat: no-repeat;
     width: 25px;
     height: 25px;
+    margin-right: 10px;
 }
 .radio:checked + label:before {
     content: url(../img/radio-on.svg);
+    margin-right: 10px;
 }
 .radio:not(checked) + label:hover:before {
     opacity: 1;
+}
+.radio-text {
+    position: absolute;
+    top: 3px;
 }
 .features p {
     font-size: 18px;
@@ -713,10 +754,12 @@ input[type="checkbox"] {
 .features-list {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 }
 .features-item {
     color:#283136;
     line-height: 20px;
+    position: relative;
 }
 .checkbox:not(checked) + label:before {
     content: "";
@@ -726,9 +769,15 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
     width: 27px;
     height: 23px;
+    margin-right: 13px;
 }
 .checkbox:checked + label:before {
     content: url(../img/checkbox-on.svg);
+    margin-right: 13px;
+}
+.checkbox-text {
+    position: absolute;
+    top: 3px;
 }
 .checkbox:not(checked) + label:hover:before {
     opacity: 1;
