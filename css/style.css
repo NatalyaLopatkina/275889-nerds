@@ -76,6 +76,8 @@ a {
 }
 .user-navigation .backet-link {
     position: relative;
+    top: 0;
+    right: 3px;
 }
 .backet-link::before {
     content: "";
@@ -654,12 +656,13 @@ a.logo:active {
 
 .navigation-shop a {
     border-bottom: 2px solid #fb565a;
+    padding-bottom: 9px;
 }
 
 h1.shop {
     width: 1160px;
     margin: 0 auto;
-    padding: 86px 20px 164px 20px;
+    padding: 73px 20px 108px 12px;
 
     font-size: 55px;
     font-weight: 500;
@@ -696,7 +699,7 @@ h1.shop {
     height: 80px;
 
     margin-top: 50px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     padding: 0 30px;
 
     background: #eeeeee;
@@ -706,18 +709,19 @@ h1.shop {
 }
 
 .price-controls {
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .scale {
+    width: 212px;
     height: 2px;
-    margin-top:39px;
+    margin-top: 37px;
     
-    background:#d7dcde;
+    background: #d7dcde;
 }
 
 .bar {
-    width: 125px;
+    width: 147px;
     height: 2px;
 
     background: #00ca74;
@@ -739,11 +743,11 @@ h1.shop {
 }
 
 .max-toggle {
-    left:19px;
+    left: 15px;
 }
 
 .min-toggle {
-    left: 150px;
+    left: 157px;
 }
 
 .min-price,
@@ -764,8 +768,8 @@ h1.shop {
 }
 
 .min-price {
-    margin-left: 10px;
-    margin-right: 25px;
+    margin-left: 5px;
+    margin-right: 29px;
 }
 
 .max-price {
@@ -773,7 +777,7 @@ h1.shop {
 }
 
 .grid p {
-    margin-top: 55px;
+    margin-top: 53px;
     margin-bottom: 14px;
 
     font-size: 18px;
@@ -838,8 +842,8 @@ input[type="checkbox"] {
 }
 
 .features p {
-    margin-top: 54px;
-    margin-bottom: 20px;
+    margin-top: 42px;
+    margin-bottom: 11px;
 
     font-size: 18px;
     font-weight: 700;
@@ -859,7 +863,7 @@ input[type="checkbox"] {
     display: inline-block;
     width: 27px;
     height: 23px;
-    margin-right: 13px;
+    margin-right: 7px;
     margin-bottom: 17px;
 
     vertical-align: top;
@@ -872,7 +876,7 @@ input[type="checkbox"] {
 .checkbox:checked + label:before {
     content: url(../img/checkbox-on.svg);
 
-    margin-right: 13px;
+    margin-right: 7px;
     margin-bottom: 17px;
 
     vertical-align: top;
@@ -884,10 +888,11 @@ input[type="checkbox"] {
 
 .grey-button {
     display: inline-block;
-    width: 260px;
+    width: 256px;
     height: 50px;
-    margin-top: 48px;
+    margin-top: 30px;
 
+    font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     text-transform: uppercase;
@@ -919,8 +924,8 @@ input[type="checkbox"] {
 
 .sort {
     margin-right: 265px;
-    margin-bottom: 46px;
-    margin-top: 0;
+    margin-bottom: 39px;
+    margin-top: 3px;
 
     font-size: 18px;
     font-weight: 700;
@@ -930,10 +935,9 @@ input[type="checkbox"] {
 
 .sort-item {
     display: flex;
-    width: 360px;
+    width: 270px;
     justify-content: space-between;
-    margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 3px;
     padding: 0;
 
     list-style: none; 
@@ -954,9 +958,19 @@ input[type="checkbox"] {
 .sort-item a:active {
     color: #000000;
 }
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 40px;
+    margin-top: 3px;
+    margin-right: 23px;
+    padding-left: 47px;
 
-.sort-item .arrow-down,
-.sort-item .arrow-up
+    list-style: none;
+}
+
+.arrow .arrow-down,
+.arrow .arrow-up
  {
     opacity: 0.1;
 }
@@ -973,6 +987,7 @@ input[type="checkbox"] {
 
 .item-description p {
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .item-description a {
@@ -998,7 +1013,7 @@ input[type="checkbox"] {
 
     width: 360px;
     height: 576px;
-    margin-bottom: 80px;
+    margin-bottom: 72px;
 
     list-style: none;
 }
@@ -1033,9 +1048,7 @@ input[type="checkbox"] {
     bottom: 0px;
     
     display: none;
-    width: 260px;
-    min-height: 230px;
-    padding: 50px;
+    padding: 30px 80px 44px 80px;
 
     font-size: 16px;
     line-height: 18px;
@@ -1056,7 +1069,7 @@ a.btn {
     display: flex;
     width: 446px;
     justify-content: space-between;
-    margin-top: 28px;
+    margin-top: -9px;
     margin-bottom: 0;
     padding: 0;
 
