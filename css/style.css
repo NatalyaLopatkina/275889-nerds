@@ -183,6 +183,8 @@ p.title-slide {
 }
 
 .slider label {
+    position: relative;
+
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -536,7 +538,6 @@ td {
     position: absolute;
     bottom: 60px;
 
-	width: 220px;
     margin: 0;
     padding: 49px 50px 47px 50px;
     
@@ -649,7 +650,7 @@ td {
 
 .footer-text p {
     margin-bottom: 7px;
-    margin-top: 78px;
+    margin-top: 71px;
 
     font-size: 36px;
     font-weight: 700;
@@ -1008,7 +1009,12 @@ input[type="checkbox"] {
 .arrow .arrow-up:active {
     opacity: 1
 }
-
+.sort-item .active {
+    color: #010101;
+}
+.arrow .active {
+    opacity: 1;
+}
 .item-description p {
     font-weight: 400;
     padding-bottom: 10px;
