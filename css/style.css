@@ -279,8 +279,6 @@ p.title-slide {
     display: inline-block;
     width: 160px;
     height: 50px;
-    margin-top: -2px;
-    margin-left: -2px;
 
     text-align: center;
 
@@ -332,6 +330,7 @@ p.title-slide {
     margin-top: 80px;
     margin-bottom: 40px;
 
+    border: none;
     border-top: 2px solid #eeeeee;
 }
 
@@ -440,6 +439,7 @@ td {
     width: 1160px;
     margin: 0 auto;
 
+    border: none;
     border-top: 2px solid #eeeeee;   
 }
 
@@ -447,60 +447,55 @@ td {
     width: 1160px;
     margin: 0 auto;
     margin-bottom: 80px;
+    margin-top: 32px;
 
+    border: none;
     border-top: 2px solid #eeeeee;
-}
-
-.partners {
-    display: flex;
-    width: 1160px;
-    height: 179px;
 }
 
 .partners-list {
 	display: flex;
     width: 1160px;
 	justify-content: space-between;
-    padding: 20px;
-    padding-top: 34px;
-    padding-left: 32px;
-    padding-right: 14px;
+    padding-top: 29px;
+    padding-left: 0px;
+    padding-right: 0px;
 	
 	list-style: none;
 }
 
 .partners-list li:nth-child(2) {
     padding-bottom: 8px;
-    padding-right: 40px
+
 }
 .partners-list li:nth-child(3) {
     padding-bottom: 8px;
-    padding-right: 54px;
 }
 
 .partners-item {
     position: relative;
 
-    padding-right: 30px;
-    
-    align-self: center;
+    display: flex;
+    align-items: center;
+    width: 22%;
+    justify-content: center;
 }
 
-.partners-item:after{
+.partners-item:after {
   content: "";
 
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -25px;
+  top: 18px;
 
   display: inline-block;
   width: 2px;
-  height: 100%;
+  height: 50px;
 
   background-color: #eeeeee;
 }
 
-.partners-item:last-child:after{
+.partners-item:last-child:after {
   content: "";
   display: none;
 }
@@ -526,16 +521,19 @@ td {
 .contacts {
     position: relative;
 }
-
+.map-container {
+    height: 420px;
+}
 .map {
     width: 100%;
-    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer-contacts {
     position: absolute;
     bottom: 60px;
-    z-index: 200;
 
 	width: 220px;
     margin: 0;
@@ -544,8 +542,13 @@ td {
     background: #ffffff;
 }
 
+.footer-contacts a {
+    margin-top: 21px;
+}
+
 .footer-contacts h4 {
     margin: 0;
+    margin-bottom: 24px;
 
     font-size: 18px;
     font-weight: 700;
@@ -555,6 +558,7 @@ td {
 
 .footer-contacts p {
     width: 204px;
+    margin-top: 18px;
 
     font-weight: 400;
     line-height: 18px;
@@ -643,7 +647,7 @@ td {
 }
 
 .footer-text p {
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     margin-top: 78px;
 
     font-size: 36px;
@@ -990,19 +994,18 @@ input[type="checkbox"] {
 }
 
 .arrow .arrow-down,
-.arrow .arrow-up
- {
-    opacity: 0.1;
+.arrow .arrow-up {
+    opacity: 0.2;
 }
 
-.sort-item .arrow-down:hover,
-.sort-item .arrow-up:hover {
-    opacity: 0.3;
+.arrow .arrow-down:hover,
+.arrow .arrow-up:hover {
+    opacity: 0.4;
 }
 
-.sort-item .arrow-down:active,
-.sort-item .arrow-up:active {
-    opacity: 1;
+.arrow .arrow-down:active,
+.arrow .arrow-up:active {
+    opacity: 1
 }
 
 .item-description p {
@@ -1011,7 +1014,8 @@ input[type="checkbox"] {
 }
 
 .item-description a {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 18px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
@@ -1046,8 +1050,10 @@ input[type="checkbox"] {
   top: -40px;
 
   width: 100%;
-  padding: 10px 10px 12px 15px;
+  padding: 9px 10px 12px 15px;
 
+  font-size: 16px;
+  letter-spacing: 3px;
   color: #fff;
 
   background-color: #4d4d4d;
@@ -1075,7 +1081,7 @@ input[type="checkbox"] {
     text-align: center;
     color:#666666;
     
-    background-color: #d5d5d5;
+    background-color: #eeeeee;
 }
 
 a.btn {
