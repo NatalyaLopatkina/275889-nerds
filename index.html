@@ -40,7 +40,7 @@
                         <img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
                         <div class="slide-information">
                             <p class="title-slide">Долго, дорого, скрупулезно.</p>
-                            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.
+                            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
                             </p>
                             <a class="btn btn-lg btn-red" href="information.html">Узнать больше</a></div>
                     </div>
@@ -74,7 +74,7 @@
                 <li class="services-item">
                     <img src="img/veb.png" alt="Веб-сайты" width="300" height="146">
                     <h3>Веб-сайты</h3>
-                    <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                    <p>Мир никогда не будет прежним<br> после того как увидит ваш сайт!</p>
                     <a class="btn btn-sm btn-red" href="order.html">Заказать</a>
                 </li>
                 <li class="services-item">
@@ -86,7 +86,7 @@
                 <li class="services-item">
                     <img src="img/presentation.png" alt="Презентации" width="300" height="146">
                     <h3>Презентации</h3>
-                    <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                    <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
                     <a class="btn btn-sm btn-yellow" href="order.html">Заказать</a>
                 </li>
             </ul>
@@ -95,7 +95,7 @@
 
         <div class="advantages content-wrapper">
             <div class="capability">
-                <p class="definition">Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
+                <p class="definition">Мы &#8212 маленькая, но гордая дизайн-студия из Краснодара.</p>
                 <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
                     рук, как роботы.</p>
                 <p class="advantages-item">Выполняем заказы на разработку:</p>
@@ -135,7 +135,7 @@
                 <li class="partners-item"><a href="mishka.html">
                 <img src="img/logo-4.png" alt="Mishka" width="173" height="84"></a></li>
             </ul>
-            
+
         </div>
         <p class="line-bottom"></p>
     </main>
@@ -144,28 +144,29 @@
             <div class="map-container">
                 <img src="img/map-marker.png" alt="Карта" class="map">
             </div>
-            <div class="footer-contacts">
-                <h4>Nёrds design studio</h4>
-                <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-                <p>тел. +7(812)275-75-75</p>
-                <a href="write.html" class="btn btn-lg btn-red">Напишите нам</a>
+            <div class="content-wrapper">
+                <div class="footer-contacts">
+                    <h4>Nёrds design studio</h4>
+                    <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                    <p>тел. +7(812)275-75-75</p>
+                    <a href="write.html" class="btn btn-lg btn-red">Напишите нам</a></div>
+                </div>
             </div>
-        </div>
 
-        <div class="footer-social">
-            <h2 class="visually-hidden">Мы в социальных сетях</h2>
-            <div class="social-button-list">
-                <ul class="social-button-item">
-                    <li class="social-button"><a href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15" class="vk"></a></li>
-                    <li class="social-button"><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22" class="fb"></a></li>
-                    <li class="social-button"><a href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
-                </ul>
+            <div class="footer-social content-wrapper">
+                <h2 class="visually-hidden">Мы в социальных сетях</h2>
+                <div class="social-button-list">
+                    <ul class="social-button-item">
+                        <li class="social-button"><a href="#"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15" class="vk"></a></li>
+                        <li class="social-button"><a href="#"><img src="img/fb-icon.svg" alt="Фейсбук" width="12" height="22" class="fb"></a></li>
+                        <li class="social-button"><a href="#"><img src="img/insta-icon.svg" alt="Инстаграмм" width="21" height="21" class="inst"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <p>Давайте дружить, это выгодно!</p>
+                    <p class="discount">Скидка 10% для друзей из социальных сетей</p>
+                </div>
             </div>
-            <div class="footer-text">
-                <p>Давайте дружить, это выгодно!</p>
-                <p class="discount">Скидка 10% для друзей из социальных сетей</p>
-            </div>
-        </div>
     </footer>
     <section class="modal-write">
         <h2>Напишите нам</h2>
@@ -187,21 +188,21 @@
         <button class="modal-close" type="button">Закрыть</button>
     </section>
     <script>
-        var openLink=document.querySelector(".footer-contacts a");
-        var popup=document.querySelector(".modal-write");
-        
-        openLink.addEventListener("click", function(evt) {
+        var openLink = document.querySelector(".footer-contacts a");
+        var popup = document.querySelector(".modal-write");
+
+        openLink.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.add("modal-show");
         });
 
-        var closeLink=document.querySelector(".modal-close");
-        
-        closeLink.addEventListener("click", function(evt) {
+        var closeLink = document.querySelector(".modal-close");
+
+        closeLink.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.remove("modal-show");
         });
-        </script>
+    </script>
 </body>
 
 </html>
