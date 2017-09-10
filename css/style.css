@@ -247,15 +247,15 @@ p.title-slide {
 
 .services-list {
 	display: flex;
-	justify-content: flex-start;
-	padding: 0;
+	justify-content: space-between;
+	padding-right: 60px;
 
 	list-style: none;
 }
 
 .services-item {
 	width: 300px;
-    padding-right: 100px;
+    padding-right: 0;
 }
 
 .services-item h3 {
