@@ -45,8 +45,8 @@ a {
  .item-navigation {
 	display: flex;
     width: 800px;
-    padding-top: 10px;
-	padding-left: 200px;
+    padding-top: 14px;
+	padding-left: 202px;
 }
 
 .visually-hidden {
@@ -55,7 +55,7 @@ a {
 
 .site-navigation {
     display: flex;
-    width: 460px;
+    width: 462px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0;
@@ -136,11 +136,11 @@ a {
 }
 p.title-slide {
     width: 510px;
-    margin-top: 75px;
+    margin-top: 77px;
     margin-bottom: 27px;
-    margin-left: -3px;
 
     font-size: 55px;
+    font-weight: 700;
     line-height: 55px;
     color: #000000;
 }
@@ -148,7 +148,7 @@ p.title-slide {
     position: relative;
 
 	width: inherit;
-	min-height: 412px;
+	min-height: 430px;
 
 	overflow: hidden;
 }
@@ -177,7 +177,7 @@ p.title-slide {
 .slider .controls {
 	position: absolute;
     left: 553px;
-    bottom: 74px;
+    bottom: 92px;
     z-index: 200;
 
 }
@@ -240,7 +240,7 @@ p.title-slide {
 }
 
 .services {
-    margin-top: 77px;
+    margin-top: 80px;
 }
 
 .services-list {
@@ -253,12 +253,11 @@ p.title-slide {
 
 .services-item {
 	width: 300px;
-    padding-right: 98px;
+    padding-right: 100px;
 }
 
 .services-item h3 {
-    margin-top: 22px;
-    margin-left: -1px;
+    margin-top: 21px;
     margin-bottom: 6px;
 
     font-size: 24px;
@@ -269,7 +268,7 @@ p.title-slide {
 
 .services-item p {
     margin-bottom: 34px;
-    margin-left: -2px;
+    margin-top: 15px;
 
     font-weight: 400;
     line-height: 24px;
@@ -358,7 +357,7 @@ p.title-slide {
 
 p.advantages-item {
     margin-top: 40px;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 
     font-weight: 500;
     line-height: 24px;
@@ -392,9 +391,10 @@ p.advantages-item {
 }
 
 p.definition {
-    margin-top: 34px;
+    margin-top: 36px;
 
     font-size: 45px;
+    font-weight: 700;
     line-height: 45px;
     color: #000000;
 }
@@ -407,24 +407,27 @@ p.definition {
 }
 
 .principles p {
-    margin-top: 21px;
+    margin-top: 22px;
     padding-bottom: 8px;
-    margin-left: 14px;
+    margin-left: 17px;
 }
 .data {
     width: 360px;
 }
 
 th {
-    padding: 10px;
     padding-left: 0;
-    padding-bottom: 38px;
-    padding-top: 11px;
+    padding-right: 18px;
+    padding-bottom: 34px;
+    padding-top: 18px;
 
     font-size: 45px;
     font-weight: 700;
     line-height: 10.06px;
     text-align: left;  
+}
+.sup {
+    font-size: 28px;
 }
 
 td {
@@ -458,12 +461,21 @@ td {
 	display: flex;
     width: 1160px;
 	justify-content: space-between;
-    margin: 0;
     padding: 20px;
-    padding-top: 27px;
-    padding-left: 0;
+    padding-top: 34px;
+    padding-left: 32px;
+    padding-right: 14px;
 	
 	list-style: none;
+}
+
+.partners-list li:nth-child(2) {
+    padding-bottom: 8px;
+    padding-right: 40px
+}
+.partners-list li:nth-child(3) {
+    padding-bottom: 8px;
+    padding-right: 54px;
 }
 
 .partners-item {
@@ -547,6 +559,14 @@ td {
     font-weight: 400;
     line-height: 18px;
     color:#666666;
+}
+
+.btn-lg-write {
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .footer-social {
