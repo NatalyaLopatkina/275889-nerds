@@ -196,17 +196,17 @@ p.title-slide {
 }
 
 #slide1:checked ~ .controls label:nth-of-type(1):before,
-#slide2:checked ~ .controls label:nth-of-type(2)
-#slide3:checked ~ .controls label:nth-of-type(3) {
+#slide2:checked ~ .controls label:nth-of-type(2):before,
+#slide3:checked ~ .controls label:nth-of-type(3):before {
     content: "";
 
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 5px;
+    left: 5px;
 
     display: inline-block;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
 
     background: #ffffff;
     border: 2px solid #c2c2c2;
@@ -231,8 +231,8 @@ p.title-slide {
 
 .btn-lg {
     display: inline-block;
-    width: 236px;
-    height: 50px;
+    padding-left: 54px;
+    padding-right: 54px;
 
     text-align: center;
 
@@ -277,8 +277,8 @@ p.title-slide {
 
 .btn-sm {
     display: inline-block;
-    width: 160px;
-    height: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
 
     text-align: center;
 
@@ -522,7 +522,8 @@ td {
     position: relative;
 }
 .map-container {
-    height: 420px;
+    min-width: 1200px;
+    height: 416px;
 }
 .map {
     width: 100%;
@@ -567,8 +568,8 @@ td {
 
 .btn-lg-write {
     display: inline-block;
-    width: 220px;
-    height: 50px;
+    padding-right: 44px;
+    padding-left: 44px;
     text-align: center;
     border-radius: 5px;
 }
@@ -1021,7 +1022,13 @@ input[type="checkbox"] {
     text-transform: uppercase;
     color: #000000;
 }
-
+.btn-cost {
+    display: inline-block;
+    padding-right: 60px;
+    padding-left: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
 .catalog-list {
     display: flex;
     width: 760px;
@@ -1052,17 +1059,17 @@ input[type="checkbox"] {
   width: 100%;
   padding: 9px 10px 12px 15px;
 
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 3px;
   color: #fff;
 
-  background-color: #4d4d4d;
+  background-color: #e9e9e9;
   box-sizing: border-box;
   border-radius: 5px 5px 0 0;
 }
 
 .catalog-item:hover:before{
-  background-color: #e9e9e9;
+  background-color: #4d4d4d;
 }
 
 .catalog-item:hover .item-description {
