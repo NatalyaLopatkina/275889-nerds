@@ -37,7 +37,7 @@ a {
 .item-navigation {
     display: flex;
     width: 800px;
-    padding-top: 14px;
+    padding-top: 10px;
     padding-left: 202px;
 }
 .visually-hidden {
@@ -103,7 +103,7 @@ a {
     padding-top: 0;
     padding-bottom: 0;
 }
-.slide-information p {
+p.slide-text {
     width: 380px;
     margin-bottom: 39px;
     font-weight: 400;
@@ -198,6 +198,7 @@ p.title-slide {
     display: flex;
     justify-content: space-between;
     padding-right: 60px;
+    padding-left: 0;
     list-style: none;
 }
 .services-item {
@@ -213,6 +214,7 @@ p.title-slide {
     text-transform: uppercase;
 }
 .services-item p {
+    max-width: 280px;
     margin-bottom: 34px;
     margin-top: 15px;
     font-weight: 400;
@@ -955,6 +957,7 @@ a.btn {
 }
 .modal-show {
     display: block;
+    
 }
 .write-form {
     display: flex;
@@ -1052,6 +1055,12 @@ a.btn {
 .write-form textarea:invalid {
     color: #e74246;
     border-color: #e74246;
+}
+.btn-lg-sub {
+    display: inline-block;
+    padding-left: 84px;
+    padding-right: 84px;
+    text-align: center;
 }
 button.btn {
     font-family: "Roboto", "Arial", "Arial Black", sans-serif;
