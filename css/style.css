@@ -272,7 +272,7 @@ p.title-slide {
     margin-bottom: 50px;
 }
 .capability {
-    width: 660px;
+    width: 680px;
 }
 .capability p,
 .capability li {
@@ -425,7 +425,7 @@ td {
 }
 .footer-contacts {
     position: absolute;
-    bottom: 60px;
+    bottom: 55px;
     margin: 0;
     padding: 49px 50px 47px 50px;
     background: #ffffff;
@@ -524,7 +524,7 @@ td {
     line-height: 36px;
 }
 p.discount {
-    margin-top: 0;
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
