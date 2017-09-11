@@ -942,12 +942,14 @@ a.btn {
 }
 .modal-write {
     position: fixed;
-    bottom: 190px;
+    bottom: auto;
     left: 50%;
+    top: 50%;
     z-index: 200;
+    transform: translate(-50%,-50%);
     display: none;
     width: 760px;
-    margin-left: -473px;
+    margin: 0;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 62px;
@@ -1000,6 +1002,7 @@ a.btn {
     line-height: 18px;
 }
 .write-form label {
+    display: block;
     margin-bottom: 10px;
     font-weight: 700;
 }
@@ -1058,8 +1061,10 @@ a.btn {
 }
 .btn-lg-sub {
     display: inline-block;
-    padding-left: 84px;
-    padding-right: 84px;
+    padding-left: 82px;
+    padding-right: 82px;
+
+    font-size: 16px;
     text-align: center;
 }
 button.btn {
