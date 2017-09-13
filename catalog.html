@@ -6,7 +6,7 @@
     <title>Нердс. Каталог</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css/normalise.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
 </head>
 
 <body>
@@ -176,7 +176,7 @@
     <footer class="main-footer">
         <div class="contacts">
             <div class="map-container">
-                <img src="img/map-marker.png" alt="Карта" class="map">
+                <img src="img/map-marker.png" alt="Карта" width="100%" height="100%" class="map">
             </div>
             <div class="content-wrapper">
                 <div class="footer-contacts">
@@ -222,22 +222,7 @@
             </form>
             <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <script>
-        var openLink = document.querySelector(".footer-contacts a");
-        var popup = document.querySelector(".modal-write");
-
-        openLink.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.add("modal-show");
-        });
-
-        var closeLink = document.querySelector(".modal-close");
-
-        closeLink.addEventListener("click", function (evt) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-        });
-    </script>
+    <script src="js/script-min.js"></script>
 </body>
 
 </html>

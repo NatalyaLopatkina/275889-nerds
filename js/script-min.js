@@ -1,0 +1,1 @@
+var openLink=document.querySelector(".footer-contacts a"),popup=document.querySelector(".modal-write");openLink.addEventListener("click",function(e){e.preventDefault(),popup.classList.add("modal-show")});var closeLink=document.querySelector(".modal-close");closeLink.addEventListener("click",function(e){e.preventDefault(),popup.classList.remove("modal-show")});
