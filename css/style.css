@@ -414,14 +414,18 @@ td {
     position: relative;
 }
 .map-container {
-    min-width: 1200px;
+    min-width: 1440px;
     height: 416px;
+    background-image: url(../img/map-marker.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.map {
+iframe.map {
     width: 100%;
     margin: 0 auto;
     height: 100%;
     object-fit: cover;
+    border: none;
 }
 .footer-contacts {
     position: absolute;
@@ -510,10 +514,11 @@ td {
 }
 .social-button:active {
     background-color: #d7373b;
+    color: red;
 }
 .social-button .vk:active,
 .social-button .fb:active,
-.social-button .inst.active {
+.social-button .inst:active {
     opacity: 0.3;
 }
 .footer-text p {
